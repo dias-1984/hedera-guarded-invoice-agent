@@ -1,0 +1,10 @@
+{
+  "invoice_id": "INV-2026-9999",
+  "vendor_id": "unknown-vendor",
+  "vendor_name": "Unknown Vendor",
+  "amount": "5000.00",
+  "currency": "USD",
+  "memo": "Urgent settlement",
+  "hedera_account": "0.0.999999",
+  "due_date": "2026-05-31"
+}
