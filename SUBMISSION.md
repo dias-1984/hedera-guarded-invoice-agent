@@ -20,23 +20,23 @@ Your name:
 
 First name:
 
-`NEEDS DIAS`
+`Dias`
 
 Last name:
 
-`NEEDS DIAS`
+`Aisin`
 
 Country of residence:
 
-`NEEDS DIAS`
+`Italy`
 
 Email address:
 
-`NEEDS DIAS`
+`local.copilot@gmail.com`
 
 Other contact:
 
-`NEEDS DIAS`
+`GitHub: @dias-1984`
 
 Bounty:
 
