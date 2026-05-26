@@ -80,20 +80,16 @@ Feedback link:
 
 ## Submission Blockers
 
-- Public GitHub repo is required.
-- Demo or public social/video URL is required.
-- Wallet address is required for payout.
-- Real name, country, email are required for private payout records.
-- Feedback link on a Hedera tool is required.
-- Current code uses a mock return-bytes adapter; a stronger submission should add a real Hedera Agent Kit adapter or clearly document the adapter boundary.
+- Public GitHub repo is done: `https://github.com/dias-1984/hedera-guarded-invoice-agent`
+- Demo URL is done via `DEMO_SCRIPT.md`: `https://github.com/dias-1984/hedera-guarded-invoice-agent/blob/master/DEMO_SCRIPT.md`
+- Feedback issue is done: `https://github.com/hashgraph/hedera-agent-kit-py/issues/317`
+- Form fields were filled on `https://ai-bounties.hedera.com/` using the values above.
+- Final form submission is blocked by Cloudflare Turnstile verification. The page returned: `Please wait for the verification check to complete, then try again.` The hidden `cf-turnstile-response` field remained empty.
+- Current code uses a mock return-bytes adapter; the submission documents the adapter boundary and real Hedera Agent Kit integration path.
 
 ## Recommended Action
 
-1. Dias approves public repo creation.
-2. Publish this folder as a GitHub repo.
-3. Add a short screen recording of:
-   - valid invoice preparation,
-   - rejected unsafe invoice,
-   - tests passing.
-4. Post `FEEDBACK_DRAFT.md` as a GitHub issue against `hashgraph/hedera-agent-kit-py` or another accepted Hedera tool repo.
-5. Submit the form.
+1. Open `https://ai-bounties.hedera.com/` in the existing OpenClaw browser tab.
+2. Complete the Cloudflare verification if prompted.
+3. Click `Submit`.
+4. Capture the confirmation text or URL.

@@ -45,18 +45,28 @@ not create or sign transactions.
 
 ## Real Hedera Integration Path
 
+The local demo intentionally uses a deterministic mock adapter so reviewers can
+run the policy boundary without credentials. Hedera's Python Agent Kit docs now
+document `AgentMode.RETURN_BYTES` as supported, which is the intended production
+integration mode for this project.
+
 To turn this into a live bounty demo:
 
 1. Install `hedera-agent-kit` in a local virtualenv.
 2. Configure a Hedera testnet account in `.env`.
-3. Replace `MockReturnBytesHederaAdapter` with an adapter that calls Hedera
-   Agent Kit in `AgentMode.RETURN_BYTES`.
+3. Use `examples/hedera_agentkit_return_bytes_langchain.py` as the reference
+   shape for wiring Hedera Agent Kit in `AgentMode.RETURN_BYTES`.
 4. Keep signing in a separate human approval step.
 5. Record a demo showing:
    - rejected unsafe invoice,
    - approved policy-compliant invoice,
    - returned transaction bytes,
    - manual approval boundary.
+
+Relevant Hedera docs:
+
+- Python quickstart: https://docs.hedera.com/hedera/open-source-solutions/ai-studio-on-hedera/hedera-ai-agent-kit/hedera-agent-kit-py/quickstart
+- Python plugin guide: https://docs.hedera.com/hedera/open-source-solutions/ai-studio-on-hedera/hedera-ai-agent-kit/hedera-agent-kit-py/create-py-plugins
 
 ## Bounty Submission Package
 
@@ -71,3 +81,5 @@ To turn this into a live bounty demo:
 - `src/hedera_guarded_invoice_agent/hedera_adapter.py`: return-bytes adapter boundary.
 - `src/hedera_guarded_invoice_agent/plugin.py`: agent-facing plugin tools.
 - `src/hedera_guarded_invoice_agent/cli.py`: local demo entrypoint.
+- `examples/hedera_agentkit_return_bytes_langchain.py`: credential-gated reference
+  integration for Hedera Agent Kit return-bytes mode.
