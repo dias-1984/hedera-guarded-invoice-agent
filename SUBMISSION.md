@@ -56,15 +56,15 @@ Project summary:
 
 GitHub repository URL:
 
-`NEEDS PUBLIC REPO URL`
+`https://github.com/dias-1984/hedera-guarded-invoice-agent`
 
 Demo or social-media URL:
 
-`NEEDS DEMO URL OR X/VIDEO URL`
+`https://github.com/dias-1984/hedera-guarded-invoice-agent/blob/master/DEMO_SCRIPT.md`
 
 Wallet address:
 
-`NEEDS DIAS HEDERA 0.0.x OR EVM ADDRESS`
+`0x69c4E3D4ca5701962b9E5Eae0752CA5590c7d8E1`
 
 Implementation details:
 
@@ -76,7 +76,7 @@ Implementation details:
 
 Feedback link:
 
-`NEEDS PUBLIC GITHUB ISSUE URL AFTER POSTING FEEDBACK_DRAFT.md`
+`https://github.com/hashgraph/hedera-agent-kit-py/issues/317`
 
 ## Submission Blockers
 
